@@ -1,9 +1,11 @@
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { Container, Row, Col, Tab } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
-import projImg5 from "../assets/img/abc.jpg";
+import projImg4 from "../assets/img/project-img4.png";
+
+import projImg5 from "../assets/img/project-img5.png";
 import projImg6 from "../assets/img/project-img6.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
@@ -15,31 +17,37 @@ export const Projects = () => {
       title: "Airbnb Replica",
       description: "Front-End and Back-End Web Development",
       imgUrl: projImg1,
+      webLink: "https://breakable-jade-lingerie.cyclic.app/",
     },
     {
       title: "Memories",
       description: "MERN Stack Application",
       imgUrl: projImg2,
+      webLink: "",
     },
     {
       title: "Movix",
       description: "React and Redux",
       imgUrl: projImg3,
+      webLink: "",
     },
     {
       title: "Assembly Line",
       description: "Object Oriented Programming-C++",
-      imgUrl: projImg1,
+      imgUrl: projImg4,
+      webLink: "https://github.com/agoyal31/Assembly-line-project_CPP",
     },
     {
       title: "Maze Runner App",
       description: "Data Structures and Algorithms",
       imgUrl: projImg5,
+      webLink: "https://github.com/agoyal31/DSA_Maze-Runner-Project",
     },
     {
       title: "Vacation Checklist",
       description: "React Fundamentals",
       imgUrl: projImg6,
+      webLink: "https://calm-phoenix-bcb295.netlify.app",
     },
   ];
 
@@ -55,29 +63,11 @@ export const Projects = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <h2>Projects</h2>
-                  <p>
-                    Section showcasing a diverse range of web projects, from
-                    e-commerce platforms to dynamic web applications,
-                    demonstrating a keen ability to architect, develop, and
-                    deploy scalable and user-centric solutions.
-                  </p>
+                  <div className="allu">
+                    <h2>Projects</h2>
+                  </div>
+
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                    <Nav
-                      variant="pills"
-                      className="nav-pills mb-5 justify-content-center align-items-center"
-                      id="pills-tab"
-                    >
-                      <Nav.Item>
-                        <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                      </Nav.Item>
-                    </Nav>
                     <Tab.Content
                       id="slideInUp"
                       className={
@@ -90,18 +80,6 @@ export const Projects = () => {
                             return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>
-                      </Tab.Pane>
-                      <Tab.Pane eventKey="section">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
-                      </Tab.Pane>
-                      <Tab.Pane eventKey="third">
-                        <p></p>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>

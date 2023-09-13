@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
-import { ArrowRightCircle } from "react-bootstrap-icons";
+import { ArrowDownCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
@@ -46,9 +46,27 @@ export const Banner = () => {
                     relentless focus on user-centric design and performance
                     excellence
                   </p>
-                  <button onClick={() => console.log("connect")}>
-                    Let’s Connect <ArrowRightCircle size={25} />
-                  </button>
+                  <div>
+                    <button
+                      className="tagline"
+                      onClick={() => console.log("connect")}
+                      // style={{ margin }}
+                    >
+                      Resume <ArrowDownCircle size={25} />
+                    </button>
+                    <button
+                      className="tagline"
+                      onClick={() => {
+                        window.open(
+                          "https://github.com/agoyal31",
+                          "_blank",
+                          "noreferrer"
+                        );
+                      }}
+                    >
+                      GitHub
+                    </button>
+                  </div>
                 </div>
               )}
             </TrackVisibility>
