@@ -52,7 +52,9 @@ export const Banner = () => {
                       onClick={() => console.log("connect")}
                       // style={{ margin }}
                     >
-                      Resume <ArrowDownCircle size={25} />
+                      <a href="/public/ar.pdf" download="ar.pdf">
+                        Resume <ArrowDownCircle size={25} />
+                      </a>
                     </button>
                     <button
                       className="tagline"

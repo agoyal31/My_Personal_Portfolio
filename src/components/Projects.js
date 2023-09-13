@@ -23,7 +23,7 @@ export const Projects = () => {
       title: "Memories",
       description: "MERN Stack Application",
       imgUrl: projImg2,
-      webLink: "",
+      webLink: "https://github.com/agoyal31/MEMORIES-Web_Application_MERN",
     },
     {
       title: "Movix",
